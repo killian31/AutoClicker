@@ -5,3 +5,6 @@ For a precise number of clicks, use the clicker mode. For large and fast keyboar
 
 The program will launch after a 3 seconds countdown to allow the user to put the mouse wherever it is needed.
 The program will provide the start time of the process, the time at wich all the clicks have been done and the duration of the process at the end.
+
+## Install requirements
+pip install -r requirements.txt
