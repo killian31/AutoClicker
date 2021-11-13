@@ -49,7 +49,7 @@ def bot():
 
     try:
         if click_or_press == 'p':
-            clicks = int(int(input("Number of press: "))/9)
+            clicks = int(int(input("Number of press: "))/10)
         else:
             clicks = int(input("Number of clicks: "))
     except:
