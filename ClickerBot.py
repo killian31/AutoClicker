@@ -35,7 +35,7 @@ def main(clicks=100, delay=0.1, click_or_press='p'):
        
 def bot():
     print('')
-    click_or_press = str(input("Do you want to auto-click or to auto-press a key ?\nType 'c' for auto-click, 'p' for auto-press :"))
+    click_or_press = str(input("Do you want to auto-click or to auto-press a key ?\nType 'c' for auto-click, 'p' for auto-press:"))
     if click_or_press not in ('c', 'p'):
         print('')
         print("Invalid command, bot set to auto-press by default")
@@ -50,9 +50,9 @@ def bot():
 
     try:
         if click_or_press == 'p':
-            clicks = int(int(input("Number of clicks/press : "))/10)
+            clicks = int(int(input("Number of press: "))/10)
         else:
-            clicks = int(input("Number of clicks/press : "))
+            clicks = int(input("Number of clicks: "))
     except:
         print("Invalid number, click set to 100 by default")
         if click_or_press == 'p':
