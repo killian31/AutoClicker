@@ -1,10 +1,9 @@
 import pyautogui
 import time
 
-
 def keyboard(delay):
     time.sleep(delay)
-    pyautogui.press(['shift', 'shift', 'shift', 'shift', 'shift', 'shift', 'shift', 'shift', 'shift'])
+    pyautogui.press(['shift', 'shift', 'shift', 'shift', 'shift', 'shift', 'shift', 'shift', 'shift', 'shift'])
 
 def click(delay): 
     time.sleep(delay)     
@@ -43,14 +42,14 @@ def bot():
         print('')
 
     try:
-        delay=float(input("Delay : "))
+        delay=float(input("Delay: "))
     except:
         print("Invalid number, delay is set to 0.1")
         delay=0.1
 
     try:
         if click_or_press == 'p':
-            clicks = int(int(input("Number of press: "))/10)
+            clicks = int(int(input("Number of press: "))/9)
         else:
             clicks = int(input("Number of clicks: "))
     except:
@@ -62,13 +61,13 @@ def bot():
 
     main(clicks=clicks, delay=delay, click_or_press=click_or_press)
 
+if __name__=='__main__':
+    start = time.localtime(time.time())
+    year_start, month_start, day_start, hour_start, minute_start, second_start, weekday_start, yearday_start, daylight_start = start
 
-start = time.localtime(time.time())
-year_start, month_start, day_start, hour_start, minute_start, second_start, weekday_start, yearday_start, daylight_start = start
+    bot()
 
-bot()
-
-finished = time.localtime(time.time())
-year_finished, month_finished, day_finished, hour_finished, minute_finished, second_finished, weekday_finished, yearday_finished, daylight_finished = finished
-print("Finished at :", "%02d:%02d:%02d"%(hour_finished, minute_finished, second_finished))
-print("Duration : ", "%02d:%02d:%02d"%(abs(hour_finished - hour_start), abs(minute_finished - minute_start), abs(second_finished - second_start)))
+    finished = time.localtime(time.time())
+    year_finished, month_finished, day_finished, hour_finished, minute_finished, second_finished, weekday_finished, yearday_finished, daylight_finished = finished
+    print("Finished at :", "%02d:%02d:%02d"%(hour_finished, minute_finished, second_finished))
+    print("Duration : ", "%02d:%02d:%02d"%(abs(hour_finished - hour_start), abs(minute_finished - minute_start), abs(second_finished - second_start)))
