@@ -7,4 +7,12 @@ The program will launch after a 3 seconds countdown to allow the user to put the
 The program will provide the start time of the process, the time at wich all the clicks have been done and the duration of the process at the end.
 
 ## Install requirements
+```bash
 pip install -r requirements.txt
+```
+
+## To run via poetry
+```bash
+poetry install
+poetry run python ClickerBot.py
+```
