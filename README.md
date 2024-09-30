@@ -6,13 +6,22 @@ For a precise number of clicks, use the clicker mode. For large and fast keyboar
 The program will launch after a 3 seconds countdown to allow the user to put the mouse wherever it is needed.
 The program will provide the start time of the process, the time at wich all the clicks have been done and the duration of the process at the end.
 
-## Install requirements
+## Install with pyenv and Poetry
+
+Create and activate a new virtualenv with 
 ```bash
-pip install -r requirements.txt
+pyenv virtualenv 3.12.0 autoclick
+pyenv activate autoclick
 ```
 
-## To run via poetry
+Then install the project with
 ```bash
+pip install poetry
 poetry install
+```
+
+## Run the AutoClicker
+
+```bash
 poetry run python ClickerBot.py
 ```
